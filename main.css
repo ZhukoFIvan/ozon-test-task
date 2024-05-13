@@ -27,9 +27,12 @@ body {
     justify-content: space-between;
     align-items: center;
     min-width: 320px;
-    height: 100vh;
+    height: 568vh;
   }
 }
+ .container h4 {
+    margin-bottom: auto;
+  }
 @media (max-width: 520px) {
   .container h4 {
     margin-right: auto;
