@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<main>
+			<section class="container">
+				<h4>Progress</h4>
+
+				<div class="progress"></div>
+				<div class="btns">
+					<div class="btn">
+						<input
+							class="percent"
+							type="number"
+							onchange="handleChange(this)"
+							value="0"
+						/>
+						<span>Value</span>
+					</div>
+					<div class="btn">
+						<input type="checkbox" id="switch" value="" />
+						<label for="switch">Toggle</label>
+						<span>Animate</span>
+					</div>
+					<div class="btn">
+						<input type="checkbox" id="switch2" onchange="setHidden(this)" />
+						<label for="switch2">Toggle</label>
+						<span>Hide</span>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+	<script src="/script.js"></script>
+	<script></script>
+</html>

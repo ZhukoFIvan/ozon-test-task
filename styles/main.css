@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 568px;
+  height: 320px;
+  padding: 20px;
+}
+@media (max-width: 520px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 320px;
+    height: 568px;
+  }
+}
+@media (max-width: 520px) {
+  .container h4 {
+    margin-right: auto;
+  }
+}
+
+.btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.btns .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btns .btn span {
+  margin-left: 20px;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: blue;
+}
+
+input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 30px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input[type=number] {
+  border: 2px black solid;
+  outline: none;
+  width: 50px;
+  height: 30px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: conic-gradient(rgb(22, 88, 242) 0deg, rgb(226, 226, 226) 0deg);
+}
+
+.progress::before {
+  content: "";
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #fff;
+}/*# sourceMappingURL=main.css.map */
