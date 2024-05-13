@@ -36,6 +36,7 @@ body {
 @media (max-width: 520px) {
   .container h4 {
     margin-right: auto;
+    margin-bottom: 0;
   }
 }
 
